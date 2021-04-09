@@ -4,6 +4,19 @@
   --main-white-color: #ffffff;
   --main-accent-color: #2196f3;
 }
+
+* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--main-white-color);
   color: var(--primary-text-color);
@@ -14,8 +27,28 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Container */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+.container.header-box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
 /* Logo */
 .logo-header {
+  align-self: center;
+
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -29,6 +62,18 @@ body {
 }
 
 /* Navigation section */
+.main-nav {
+  margin-left: 93px;
+  align-self: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  padding-left: 50px;
+}
 
 .site-nav .link {
   color: var(--secondary-text-color);
@@ -37,6 +82,11 @@ body {
   letter-spacing: 0.02em;
 
   text-decoration: none;
+}
+
+.contacts-list {
+  align-self: center;
+  margin-left: auto;
 }
 
 .contacts {
@@ -62,20 +112,28 @@ body {
 }
 
 /* Герой */
-
 .hero {
-  background-color: #2f303a; /* Временный фон для того чтобы был виден текст */
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-
-  text-align: center;
   text-transform: uppercase;
 }
 
 .hero-button {
+  margin-top: 20px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-style: hidden;
+
   font-family: Roboto, sans-serif;
   background-color: var(--main-accent-color);
   color: var(--main-white-color);
@@ -83,9 +141,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .hero-button:hover,
