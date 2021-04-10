@@ -89,6 +89,10 @@ body {
   margin-left: auto;
 }
 
+.contacts-list .link + .link {
+  margin-left: 50px;
+}
+
 .contacts {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -129,7 +133,7 @@ body {
 }
 
 .hero-button {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
   border-style: hidden;
@@ -151,7 +155,21 @@ body {
 
 /* Особенности */
 
+.features-list.list {
+  display: flex;
+}
+
+.features-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-title {
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 700;
   line-height: 1.14;
@@ -160,7 +178,12 @@ body {
 
 /* Чем мы занимаемся */
 
+.our-work-section {
+  padding-bottom: 94px;
+}
+
 .secondary-titles {
+  margin-bottom: 50px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -169,9 +192,47 @@ body {
   text-align: center;
 }
 
+.our-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.our-work-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
 /* Наша команда */
 
-.ourteam-name {
+.our-team-section {
+  background-color: #f5f4fa;
+  outline: 2px solid tomato;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+}
+
+.our-team-list.list {
+  display: flex;
+}
+
+.card {
+  background-color: var(--main-white-color);
+  padding-bottom: 30px;
+  border-radius: 4px;
+}
+
+.card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.our-team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -180,7 +241,7 @@ body {
   text-align: center;
 }
 
-.ourteam-position {
+.our-team-position {
   font-size: 16px;
   line-height: 1.19;
 
@@ -193,7 +254,15 @@ footer {
   background-color: #2f303a; /* Временный фон для того чтобы был виден текст */
 }
 
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--main-white-color);
   font-family: Raleway;
   font-weight: 700;
@@ -204,10 +273,15 @@ footer {
 }
 
 .footer-address {
+  display: inline-block;
+  margin-bottom: 9px;
+
   color: var(--main-white-color);
 }
 
 .footer-contacts {
+  display: block;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
