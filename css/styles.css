@@ -18,6 +18,16 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 body {
   background-color: var(--main-white-color);
   color: var(--primary-text-color);
@@ -42,7 +52,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 80px;
-  border-bottom: 1px solid #ececec;
 }
 
 /* Logo */
@@ -194,7 +203,6 @@ body {
 
 .our-work-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -206,7 +214,6 @@ body {
 
 .our-team-section {
   background-color: #f5f4fa;
-  outline: 2px solid tomato;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -223,6 +230,7 @@ body {
   background-color: var(--main-white-color);
   padding-bottom: 30px;
   border-radius: 4px;
+  width: 270px;
 }
 
 .our-team-card:not(:nth-child(4n)) {
@@ -341,12 +349,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-.example-list > .container {
-  /* width: calc((100% - 2 * 27) / 3); */
-}
 
 .example-card {
-  border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -357,6 +361,13 @@ footer {
 
 .example-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .example-name {
